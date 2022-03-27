@@ -16,8 +16,9 @@ class _HomePageState extends State<HomePage> {
   late Future<List> _data = _getQuiz();
   var _ID = 0;
   var _message = "";
-  var _check = false;
   var _invalid = 0;
+  var _check = false;
+
 
   @override
   Widget build(BuildContext context) {
@@ -88,10 +89,8 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-
                         Center(child: Text("จบเกม" , style: TextStyle(fontSize: 40.0),)),
                         Center(child: Text("ทายผิด $_invalid ครั้ง" , style: TextStyle(fontSize: 20.0),)),
-
                       ],
                     ),
                   if(_check)
